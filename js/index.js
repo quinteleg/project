@@ -59,3 +59,23 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+
+function validateForm() {
+    let contact = document.forms["contactForm"];
+    if (contact["inputName"].value == "") {
+        alert("Debes introducir tu nombre");
+        return false;
+    }
+    if (contact["inputEmail4"].value == "") {
+        alert("Debes introducir un correo electronico");
+        return false;
+    }
+    if (contact["inputTel"].value == "") {
+        alert("Debes introducir un numero telefonico");
+        return false;
+    }
+    if (contact["inputMessage"].value == "") {
+        alert("Debes introducir el mensaje");
+        return false;
+    }
+}
