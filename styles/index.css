@@ -139,7 +139,7 @@ li a:focus {
 
 
 .our-brands {
-  background-image: url(/assets/homepage/brands/OPC2-Home-colombia_1440x480-brands.png);
+  background-image: url(https://quinteleg.github.io/project/assets/homepage/brands/OPC2-Home-colombia_1440x480-brands.png);
   width: 100%;
   background-size: cover;
   height: 600px;
@@ -167,7 +167,7 @@ section .title h2 {
 }
 
 .diversity-sustentability .diversity {
-  background-image: url(/assets/homepage/diversity-and-inclusion/Home-colombia_760x320-diversity.png);
+  background-image: url(/https://quinteleg.github.io/project/assets/homepage/diversity-and-inclusion/Home-colombia_760x320-diversity.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,7 +179,7 @@ section .title h2 {
 }
 
 .diversity-sustentability .sustentability {
-  background-image: url(/assets/homepage/diversity-and-inclusion/Home-colombia_760x320-sustainability.png);
+  background-image: url(/https://quinteleg.github.io/project/assets/homepage/diversity-and-inclusion/Home-colombia_760x320-sustainability.png);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -191,7 +191,7 @@ section .title h2 {
 }
 
 .at-home {
-  background-image: url(/assets/homepage/ccth/Home-colombia_1440x480-CCTH.png);
+  background-image: url(/https://quinteleg.github.io/project/assets/homepage/ccth/Home-colombia_1440x480-CCTH.png);
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -202,7 +202,7 @@ section .title h2 {
 }
 
 .in-colombia {
-  background-image: url(/assets/homepage/en-colombia/Home-colombia_760x320-In-colombia-09.png);
+  background-image: url(/https://quinteleg.github.io/project/assets/homepage/en-colombia/Home-colombia_760x320-In-colombia-09.png);
   width: 100%;
   background-size: cover;
   background-position: center center;
@@ -230,15 +230,15 @@ section .title h2 {
 }
 
 .various .item:nth-child(1) {
-  background-image: url(/assets/homepage/contact-work-and-news/Home-colombia_600x600-work-with-us.png);
+  background-image: url(/https://quinteleg.github.io/project/assets/homepage/contact-work-and-news/Home-colombia_600x600-work-with-us.png);
 }
 
 .various .item:nth-child(2) {
-  background-image: url(/assets/homepage/contact-work-and-news/Home-colombia_600x600-news.png);
+  background-image: url(/https://quinteleg.github.io/project/assets/homepage/contact-work-and-news/Home-colombia_600x600-news.png);
 }
 
 .various .item:nth-child(3) {
-  background-image: url(/assets/homepage/contact-work-and-news/Home-colombia_600x600-contact-us.png);
+  background-image: url(/https://quinteleg.github.io/project/assets/homepage/contact-work-and-news/Home-colombia_600x600-contact-us.png);
 }
 
 /* en proxima entrega con javascript podra implementarse un tabbed navigation */
@@ -256,7 +256,7 @@ section .title h2 {
 }
 
 .bottom-nav #countries{
-  background-image: url(/assets/homepage/es/country-navigator-map-gray.png);
+  background-image: url(/https://quinteleg.github.io/project/assets/homepage/es/country-navigator-map-gray.png);
   width: 100%;
   background-size: cover;
   background-position: center center;
