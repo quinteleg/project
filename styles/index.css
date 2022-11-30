@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  width: 100%;
+}
+
+h5 {
+  font-family: 'Figtree', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Figtree', sans-serif;
+  font-style: bold;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+p,
+li,
+span {
+  font-family: 'Figtree', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  margin-bottom: 0;
+}
+
+/*
+----Nav Menu Hamburger with animation to avoid use JS
+*/
+
+header {
+  background-color: #000000;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  height: 40px;
+}
+
+header .search img {
+  height: 30px;
+  padding-right: 20px;
+}
+
+.hamburger {
+  visibility: visible;
+}
+
+.hamburger,
+.close {
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+}
+
+.hamburger img,
+.close img {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  overflow: scroll;
+  list-style: none;
+  background: #000000;
+  opacity: 0.8;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /* animate slide up/down */
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+.navbar:target {
+  /* show navbar */
+  transform: translateY(0);
+}
+
+.navbar li {
+  width: 80%;
+}
+
+.navbar li ul {
+  margin-left: 40px;
+}
+
+.navbar li a {
+  display: block;
+  font-family: 'Figtree', sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+li a:hover,
+li a:focus {
+  /* show border bottom */
+  border-bottom: 2px solid #f70000;
+}
+
+.carousel img {
+  width: 100%;
+}
+
+
+.our-brands {
+  background-image: url(/assets/homepage/brands/OPC2-Home-colombia_1440x480-brands.png);
+  width: 100%;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .title {
+  letter-spacing: 0;
+  line-height: 2.8rem;
+  text-decoration: none;
+}
+
+section .title h2 {
+  font-weight: 800;
+  font-size: 2.8rem;
+  padding: 0 2rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.diversity-sustentability {
+  display: flex;
+}
+
+.diversity-sustentability .diversity {
+  background-image: url(/assets/homepage/diversity-and-inclusion/Home-colombia_760x320-diversity.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diversity-sustentability .sustentability {
+  background-image: url(/assets/homepage/diversity-and-inclusion/Home-colombia_760x320-sustainability.png);
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.at-home {
+  background-image: url(/assets/homepage/ccth/Home-colombia_1440x480-CCTH.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-colombia {
+  background-image: url(/assets/homepage/en-colombia/Home-colombia_760x320-In-colombia-09.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.various {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.various .item {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.various .item:nth-child(1) {
+  background-image: url(/assets/homepage/contact-work-and-news/Home-colombia_600x600-work-with-us.png);
+}
+
+.various .item:nth-child(2) {
+  background-image: url(/assets/homepage/contact-work-and-news/Home-colombia_600x600-news.png);
+}
+
+.various .item:nth-child(3) {
+  background-image: url(/assets/homepage/contact-work-and-news/Home-colombia_600x600-contact-us.png);
+}
+
+/* en proxima entrega con javascript podra implementarse un tabbed navigation */
+.bottom-nav {
+  text-align: center;
+}
+
+.bottom-nav #marks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-nav #marks img{
+  width: 180px;
+}
+
+.bottom-nav #countries{
+  background-image: url(/assets/homepage/es/country-navigator-map-gray.png);
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.bottom-nav #countries li{
+  list-style: none;
+}
+.bottom-nav #countries li a{
+  text-decoration: none;
+}
+
+.bottom-nav #countries h4{
+  padding-top: 50px;
+}
+
+footer {
+  background-color: #000000;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.tab {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 20px;
+  margin: 0 30px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  border-bottom: #f70000 solid;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: #000000 solid;
+  font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  height:300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer .logo {
+  height: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer div {
+  display: flex;
+  align-self: left;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer nav li {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: solid 1px #ffffff;
+  list-style: none;
+}
+
+footer nav li:last-child {
+  border-right: none;
+}
+
+footer nav li a {
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+
+footer p {
+  font-weight: 100;
+  color: #ffffff;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
