@@ -27,6 +27,18 @@ h2 {
   margin-bottom: 0;
 }
 
+@media (max-width: 600px) {
+  section .title h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 601px) {
+  section .title h2 {
+    font-size: 2.8rem;
+  }
+}
+
 p,
 li,
 span {
@@ -140,7 +152,7 @@ li a:focus {
 
 .our-brands {
   background-image: url(https://quinteleg.github.io/project/assets/homepage/brands/OPC2-Home-colombia_1440x480-brands.png);
-  width: 100%;
+  /* width: 100%; */
   background-size: cover;
   height: 600px;
   display: flex;
@@ -156,7 +168,6 @@ section .title {
 
 section .title h2 {
   font-weight: 800;
-  font-size: 2.8rem;
   padding: 0 2rem;
   color: #ffffff;
   text-transform: uppercase;
@@ -168,7 +179,6 @@ section .title h2 {
 
 .diversity-sustentability .diversity {
   background-image: url(https://quinteleg.github.io/project/assets/homepage/diversity-and-inclusion/Home-colombia_760x320-diversity.png);
-  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -180,7 +190,6 @@ section .title h2 {
 
 .diversity-sustentability .sustentability {
   background-image: url(https://quinteleg.github.io/project/assets/homepage/diversity-and-inclusion/Home-colombia_760x320-sustainability.png);
-  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -192,7 +201,6 @@ section .title h2 {
 
 .at-home {
   background-image: url(https://quinteleg.github.io/project/assets/homepage/ccth/Home-colombia_1440x480-CCTH.png);
-  width: 100%;
   background-size: cover;
   background-position: center center;
   height: 600px;
@@ -203,7 +211,6 @@ section .title h2 {
 
 .in-colombia {
   background-image: url(https://quinteleg.github.io/project/assets/homepage/en-colombia/Home-colombia_760x320-In-colombia-09.png);
-  width: 100%;
   background-size: cover;
   background-position: center center;
   height: 600px;
@@ -214,15 +221,13 @@ section .title h2 {
 .various {
   display: flex;
   justify-content: center;
-  height: 600px;
 }
 
 .various .item {
-  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 600px;
+  height:500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,13 +246,11 @@ section .title h2 {
   background-image: url(https://quinteleg.github.io/project/assets/homepage/contact-work-and-news/Home-colombia_600x600-contact-us.png);
 }
 
-/* en proxima entrega con javascript podra implementarse un tabbed navigation */
 .bottom-nav {
   text-align: center;
 }
 
 .bottom-nav #marks {
-  display: flex;
   justify-content: space-around;
 }
 
@@ -260,7 +263,6 @@ section .title h2 {
   width: 100%;
   background-size: cover;
   background-position: center center;
-  height: 600px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -279,7 +281,6 @@ section .title h2 {
 
 footer {
   background-color: #000000;
-  height: 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,7 +301,6 @@ footer {
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 20px;
-  margin: 0 30px;
 }
 
 /* Change background color of buttons on hover */
@@ -321,7 +321,6 @@ footer {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
-  height:300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -347,17 +346,10 @@ footer .logo {
 }
 
 footer div {
-  display: flex;
-  align-self: left;
   width: 100%;
-  justify-content: space-around;
   padding: 10px 0;
 }
 
-footer nav ul {
-  display: flex;
-  flex-direction: row;
-}
 
 footer nav li {
   padding-right: 10px;
